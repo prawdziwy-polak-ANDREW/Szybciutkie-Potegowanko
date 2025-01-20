@@ -2,36 +2,36 @@
 
 ## Wprowadzenie
 
-Szybkie potęgowanie to algorytm obliczania potęg w czasie logarytmicznym względem wykładnika, co znacząco przyspiesza operacje w porównaniu do naiwnych podejść liniowych. W tym dokumencie przedstawione zostały implementacje algorytmu szybkiego potęgowania w wersji iteracyjnej i rekurencyjnej, wraz z omówieniem złożoności obliczeniowej.
+Szybkie potęgowanie to algorytm obliczania potęg w czasie logarytmicznym względem wykładnika, co znacząco przyspiesza operacje w porównaniu do naiwnych podejść liniowych. Poniżej przedstawione i omówione zostały dwie metody takiego potęgowania, iteracyjna i rekurencyjna.
 
-## Implementacje
+## Omówienie dwóch metod
 
-### Wersja Iteracyjna
+### Metoda Iteracyjna
 
 ```python
-# Funkcja iteracyjna do szybkiego potęgowania
-def fast_power_iterative(base, exponent):
+# Iteracyjna funkcja
+def szybkie_iteracyjne(podstawa, eksponent):
     result = 1
-    while exponent > 0:
-        if exponent % 2 == 1:  # Jeśli wykładnik jest nieparzysty
-            result *= base
-        base *= base
-        exponent //= 2
+    while eksponent > 0:
+        if eksponent % 2 == 1:  # Jesli wykladnik jest nieparzysty
+            result *= podstawa
+        podstawa *= podstawa
+        eksponent //= 2
     return result
 ```
 
-### Wersja Rekurencyjna
+### Metoda Rekurencyjna
 
 ```python
-# Funkcja rekurencyjna do szybkiego potęgowania
-def fast_power_recursive(base, exponent):
-    if exponent == 0:
+# Rekurencyjna funkcja
+def szybkie_rekurencyjne(podstawa, eksponent):
+    if eksponent == 0:
         return 1
-    if exponent % 2 == 0:
-        half_power = fast_power_recursive(base, exponent // 2)
-        return half_power * half_power
+    if eksponent % 2 == 0:
+        polowa_potegi = szybkie_rekurencyjne(podstawa, eksponent // 2)
+        return polowa_potegi * polowa_potegi
     else:
-        return base * fast_power_recursive(base, exponent - 1)
+        return podstawa * szybkie_rekurencyjne(podstawa, eksponent - 1)
 ```
 
 ## Złożoność Obliczeniowa
