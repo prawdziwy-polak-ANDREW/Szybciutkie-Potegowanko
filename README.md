@@ -37,7 +37,7 @@ def szybkie_rekurencyjne(podstawa, wykladnik):
 ## Złożoność Obliczeniowa
 
 1. **Złożoność Czasowa**:
-   - Zarówno w wersji iteracyjnej, jak i rekurencyjnej algorytm wykonuje operacje proporcjonalne do liczby bitów w wykładniku. Wartość ta wynosi log<sub>2</sub>(eksponent). Dlatego złożoność czasowa wynosi **O(log n)**, gdzie *n* to wykładnik.
+   - Zarówno w wersji iteracyjnej, jak i rekurencyjnej algorytm wykonuje operacje proporcjonalne do liczby bitów w wykładniku. Wartość ta wynosi log<sub>2</sub>(wykladnik). Dlatego złożoność czasowa wynosi **O(log n)**, gdzie *n* to wykładnik.
 
 2. **Złożoność Pamięciowa**:
    - Wersja iteracyjna ma złożoność pamięciową **O(1)**, ponieważ używa stałej ilości zmiennych.
@@ -53,7 +53,7 @@ print(szybkie_iteracyjne(2, 10))  # Wynik: 1024
 print(szybkie_rekurencyjne(2, 10))  # Wynik: 1024
 ```
 
-## Podsumowanie
+## Podsumowujac
 
 Szybkie potęgowanie jest wydajnym algorytmem umożliwiającym obliczanie potęg w czasie logarytmicznym. Wersja iteracyjna jest bardziej efektywna pamięciowo, natomiast rekurencyjna jest bardziej przejrzysta i prostsza do implementacji w wielu przypadkach.
 
