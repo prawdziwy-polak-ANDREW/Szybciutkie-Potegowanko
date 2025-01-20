@@ -1,4 +1,4 @@
-# Szybciutkie-Potegowanko
+# Szybciutkie Potegowanko
 
 ## Wprowadzenie
 
