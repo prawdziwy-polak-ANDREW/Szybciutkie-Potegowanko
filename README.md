@@ -1,9 +1,11 @@
 # Szybciutkie Potegowanko
 
 
+
 ## Wprowadzenie
 
 Szybkie potęgowanie to algorytm obliczania potęg w czasie logarytmicznym względem wykładnika, co znacząco przyspiesza operacje w porównaniu do naiwnych podejść liniowych. Poniżej przedstawione i omówione zostały dwie metody takiego potęgowania, iteracyjna i rekurencyjna.
+
 
 
 ## Omówienie dwóch metod
@@ -22,6 +24,7 @@ def szybkie_iteracyjne(podstawa, wykladnik):
     return result
 ```
 
+
 ### Metoda Rekurencyjna
 
 ```python
@@ -37,6 +40,7 @@ def szybkie_rekurencyjne(podstawa, wykladnik):
 ```
 
 
+
 ## Złożoność Obliczeniowa
 
 1. **Złożoność Czasowa**:
@@ -45,6 +49,7 @@ def szybkie_rekurencyjne(podstawa, wykladnik):
 2. **Złożoność Pamięciowa**:
    - Wersja iteracyjna ma złożoność pamięciową **O(1)**, ponieważ używa stałej ilości zmiennych.
    - W wersji rekurencyjnej dodatkowo zachowywany jest stos wywołań rekurencyjnych, co skutkuje złożonością pamięciową **O(log n)**.
+
 
 
 ## Przykłady Użycia
@@ -58,11 +63,13 @@ print(szybkie_rekurencyjne(2, 10))  # Wynik: 1024
 ```
 
 
+
 ## Podsumowujac
 
 Szybkie potęgowanie jest wydajnym algorytmem umożliwiającym obliczanie potęg w czasie logarytmicznym. Wersja iteracyjna jest bardziej efektywna pamięciowo, natomiast rekurencyjna jest bardziej przejrzysta i prostsza do implementacji w wielu przypadkach.
 
 **Zachęcam do eksperymentowania z obiema wersjami i analizy ich wydajności w różnych scenariuszach!**
+
 
 
 ## Krótke zadanko (TYLKO DLA CHĘTNYCH!!!)
