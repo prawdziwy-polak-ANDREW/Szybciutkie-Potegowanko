@@ -47,7 +47,7 @@ def szybkie_rekurencyjne(podstawa, wykladnik):
 
 ```python
 # Przykład użycia wersji iteracyjnej
-print(szybkie_iteracyjne(2, 10))  # Wynik: 1024
+print(szybkie_iteracyjne(5, 5))  # Wynik: 3125
 
 # Przykład użycia wersji rekurencyjnej
 print(szybkie_rekurencyjne(2, 10))  # Wynik: 1024
@@ -58,4 +58,9 @@ print(szybkie_rekurencyjne(2, 10))  # Wynik: 1024
 Szybkie potęgowanie jest wydajnym algorytmem umożliwiającym obliczanie potęg w czasie logarytmicznym. Wersja iteracyjna jest bardziej efektywna pamięciowo, natomiast rekurencyjna jest bardziej przejrzysta i prostsza do implementacji w wielu przypadkach.
 
 **Zachęcam do eksperymentowania z obiema wersjami i analizy ich wydajności w różnych scenariuszach!**
+
+
+## Krótke zadanko (TYLKO DLA CHĘTNYCH!!!)
+
+Napisz program porównujący długość wykonania potęgowania za pomocą obu metod oraz sprawdza, czy wyniki są identyczne. 
 
